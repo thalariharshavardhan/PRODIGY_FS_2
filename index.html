@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Management System</h1>
+        <div class="form-container">
+            <input type="text" id="employeeName" placeholder="Employee Name" required>
+            <input type="text" id="employeePosition" placeholder="Employee Position" required>
+            <input type="number" id="employeeSalary" placeholder="Salary" required>
+            <button onclick="addEmployee()">Add Employee</button>
+            <button id="updateButton" onclick="updateEmployee()" style="display: none;">Update Employee</button>
+        </div>
+        
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Employee rows will appear here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
